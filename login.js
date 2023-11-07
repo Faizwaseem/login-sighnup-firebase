@@ -2,7 +2,7 @@ import { auth  } from "./config.js"
 import {signInWithEmailAndPassword  }  from'https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js'
 
 
-// import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js"; 
+// import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js"; 
 // console.log(collection);
 const form=document.querySelector('form')
 const email=document.querySelector('#email')
@@ -25,23 +25,8 @@ signInWithEmailAndPassword(auth, email.value, password.value)
   .catch((error) => {
     console.log(error.code);
   });
-  const userD = {
-    email :email.value,
-    pass :password.value,
+//firestore add data
 
-  }
-// try {
-//   const docRef = await addDoc(collection(db, "users"), {
-//     first: "Ada",
-//     last: "Lovelace",
-//     born: 1815
-//   });
-//   console.log("Document written with ID: ", docRef.id);
-// } catch (e) {
-//   console.error("Error adding document: ", e);
-// }
-// email.value = ''
-//     password.value = ''
-
+ 
 })
 

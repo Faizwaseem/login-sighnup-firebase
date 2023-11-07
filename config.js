@@ -3,7 +3,7 @@
 import { getAuth } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
 // FireStore
 {/* <script src=""></script> */}
-import { getFirestore } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 // import { getFirestore } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js";
 
   const firebaseConfig = {
